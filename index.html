@@ -334,6 +334,7 @@
                 <div class="main-title">
                     <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
                 </div>
+                <div class="message-area" id="messageArea"></div>
                 <div class="contact-content-con">
                     <div class="left-contact">
                         <h4>Contact me here</h4>
@@ -406,7 +407,7 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" class="contact-form">
+                        <form action="" class="contact-form" onsubmit="submitForm(event)">
                             <div class="input-control i-c-2">
                                 <input id="name" type="text" required placeholder="YOUR NAME">
                                 <input id="email" type="email" required placeholder="YOUR EMAIL">
@@ -418,7 +419,7 @@
                                 <input id="subject" type="text" required placeholder="ENTER SUBJECT">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="message" cols="15" rows="6" placeholder="Message Here..."></textarea>
+                                <textarea id="message" cols="15" rows="6" placeholder="Message Here..."></textarea>
                             </div>
                             <div class="submit-btn">
                                 <button class="main-btn" type="submit" style="background-color:var(--color-primary);">

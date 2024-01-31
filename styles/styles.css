@@ -962,4 +962,28 @@ section {
   }
 }
 
+.message-area {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.success-message {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border: 1px solid #c3e6cb;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+
+}
+
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+
 /*# sourceMappingURL=styles.css.map */
+
