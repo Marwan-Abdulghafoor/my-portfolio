@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/blog.css">
+    <title>My Blog</title>
+</head>
+<body>
+    <header>
+        <button id="backButton" onclick="goBack()">Back</button>
+        <h1>AWS Connect</h1>
+    </header>
+    
+    <main>
+        <article>
+            <h2>Building a Live Chat Widget for Your Portfolio Website with AWS Connect.</h2>
+            <img src="img/blog2.png" alt="Description of the image">
+
+
+            <h3>
+                Introduction
+            </h3>
+
+            <p>
+                In the modern world of technology, being able to communicate well is crucial, 
+                especially when you want to connect with employers, recruiters, or people checking out your portfolio website. 
+                A great way to make this communication even better is by adding a live chat feature. 
+                In this blog post, I'll show you the steps of how I added AWS Connect, a cloud-based contact center service, 
+                to my portfolio website. 
+                <br><br>
+                Amazon Connect is an omnichannel cloud contact center. You can set up a contact center in a few steps, 
+                add agents who are located anywhere, and start engaging with your customers.
+                <br><br>
+                This made the chat experience more personalized and efficient.
+            </p>
+            <br>
+            <br>
+            <h3>
+                Step 1: Setting Up an Amazon Connect Virtual Contact Center Instance 
+            </h3>
+            
+            <p>
+                I started with creating an Amazon Connect virtual contact center instance from the AWS console. 
+                Each instance contains all the resources and settings related to your contact center. 
+            </p>
+            <img src="img/blog3.png" alt="Description of the image">
+            <p>
+                I added the domain from which chats will be initialized, specified admins to access the instance, and data storage for the instance.
+            </p>
+            <img src="img/blog4.png" alt="Description of the image">
+
+            <br>
+            <br>
+            <h3>
+                Step 2: Designing the Customer Experience Flow 
+            </h3>
+            
+            <p>
+                Once the virtual contact center is set up, I logged in to create a flow, 
+                A flow defines the customer experience with your contact center from start to finish. 
+                Amazon Connect includes a set of default flows so you can quickly set up and run a contact center. 
+                However, you may want to create custom flows for your specific scenario.
+            </p>
+            <img src="img/blog5.png" alt="Description of the image">
+            <p>
+                My customed flow includes a welcoming automated message when someone starts a chat and places them in a queue until 
+                I join the conversation from the agent workspace.            
+            </p>
+            <img src="img/blog7.png" alt="Description of the image">
+
+            <br>
+            <br>
+            <h3>
+                Step 3: Creating Rules for Notifications 
+            </h3>
+            
+            <p>
+                To ensure I never miss a chat request, I established a rule in AWS Connect. <br>
+                A rule is an action that Amazon Connect automatically performs, based on conditions you specify. <br>
+                This rule triggers an automatic email notification whenever someone is placed in the queue, 
+                giving me real-time alerts and enabling prompt responses.
+            </p>
+            <img src="img/blog8.png" alt="Description of the image">
+
+            <br>
+            <br>
+            <h3>
+                Step 4: Generating a Communication Widget
+            </h3>
+            
+            <p>
+                The communication widget, aka the live chat widget, 
+                is a crucial component. I configured it by selecting the flow 
+                created in Step 2 and customized its style to align with the aesthetics 
+                of my portfolio website.
+            </p>
+            <img src="img/blog9.png" alt="Description of the image">
+            <img src="img/blog10.png" alt="Description of the image">
+
+            <br>
+            <br>
+            <h3>
+                Step 5: Implementing the JavaScript Code
+            </h3>
+            
+            <p>
+                With the configuration complete, AWS Connect generated a JavaScript code 
+                for the communication widget. Implementing this code into my frontend was 
+                a breeze – a simple copy-paste action seamlessly integrated the live 
+                chat functionality into my website.
+            </p>
+            <img src="img/blog11.png" alt="Description of the image">
+
+            <br><br><br>
+
+            <p style="font-weight:bold">
+            Integrating AWS Connect's live chat widget into my portfolio website has not 
+            only added a professional touch but has also significantly improved 
+            communication with my audience. By following these simple steps, you too can 
+            enhance your website's functionality and create a more engaging and responsive 
+            user experience.
+            </p>
+            <img src="img/blog12.png" alt="Description of the image">
+
+        </article>
+
+      
+    </main>
+
+    
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
