@@ -42,6 +42,7 @@ async function submitForm(event) {
             },
             body: JSON.stringify(formData),
         });
+        
 
         // Get the message area
         const messageArea = document.getElementById('messageArea');
