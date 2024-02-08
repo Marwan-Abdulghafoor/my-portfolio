@@ -35,7 +35,7 @@ async function submitForm(event) {
 
     try {
         // Send REST request
-        const response = await fetch('https://9k0yd1o6w4.execute-api.us-east-1.amazonaws.com/v1/contact', {
+        const response = await fetch('https://sp3w73lwab.execute-api.us-east-1.amazonaws.com/v1/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
